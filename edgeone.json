@@ -1,0 +1,4 @@
+{
+  "headers": [{ "source": "/*", "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }] }],
+  "routes": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
