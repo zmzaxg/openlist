@@ -1,4 +1,16 @@
 {
-  "headers": [{ "source": "/*", "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }] }],
-  "routes": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "routes": [
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/*",
+      "headers": [
+        { "key": "Cache-Control", "value": "max-age=31536000" }
+      ]
+    }
+  ]
 }
